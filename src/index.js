@@ -4,7 +4,7 @@ import { constants } from './util/constants.js'
 import SocketServer from './util/socket.js'
 import Event from 'events'
 
-const port = process.env.POST || 3000
+const port = process.env.PORT || 3000
 
 const socketServer = new SocketServer({ port })
 const roomsPubSub = new Event()
